@@ -21,10 +21,7 @@ export DEBIAN_FRONTEND=noninteractive
 export TZ=Asia/Kolkata
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-apt-get update
-apt-get upgrade -y
-apt-get install -y --no-install-recommends ffmpeg neofetch mediainfo megatools
-apt-get autoremove --purge
+apt update && apt upgrade -y && apt install --no-install-recommends -y bash python3-dev python3-lxml gcc clang make git neofetch wget zip unzip
 
 echo '
         •• Cloning Repository
