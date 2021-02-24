@@ -4,8 +4,7 @@
 # PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 FROM python:3.9.2-slim-buster
-RUN chmod +x /usr/local/bin/*
-RUN wget https://raw.githubusercontent.com/TeamUltroid/Ultroid/beta/resources/startup/deploy.sh
-RUN sh deploy.sh
+COPY resources/startup/deploy.sh
+RUN chmod +x deploy.sh && sh deploy.sh
 WORKDIR /root/TeamUltroid/
 CMD ["bash", "resources/startup/startup.sh"]
