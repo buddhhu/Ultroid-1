@@ -37,8 +37,6 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     musl \
     neofetch \
     python3-lxml \
-    postgresql \
-    postgresql-client \
     libpq-dev \
     libcurl4-openssl-dev \
     libxml2-dev \
@@ -61,7 +59,8 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     make \
     libopus0 \
     libopus-dev \
-    gcc
+    gcc \
+    zip
 
 echo '
         •• Cloning Repository
