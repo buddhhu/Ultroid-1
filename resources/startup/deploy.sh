@@ -61,7 +61,8 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     libopus-dev \
     gcc \
     zip \
-    mediainfo
+    mediainfo \
+    megatools
 
 echo '
         •• Cloning Repository
