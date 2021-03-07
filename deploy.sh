@@ -61,7 +61,8 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     zip \
     mediainfo \
     megatools \
-    aria2c
+    aria2c \
+    gcc
 
 echo '
         •• Cloning Repository
