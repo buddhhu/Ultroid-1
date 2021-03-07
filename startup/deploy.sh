@@ -44,7 +44,6 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     openssl \
     pv \
     jq \
-    wget \
     python3-dev \
     libreadline-dev \
     libyaml-dev \
@@ -59,10 +58,10 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     make \
     libopus0 \
     libopus-dev \
-    gcc \
     zip \
     mediainfo \
-    megatools
+    megatools \
+    aria2c
 
 echo '
         •• Cloning Repository
