@@ -24,7 +24,6 @@ ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 apt update && apt upgrade -y && apt install --no-install-recommends -y \
     debian-keyring \
     debian-archive-keyring \
-    gcc \
     bash \
     curl \
     git \
@@ -45,6 +44,7 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     openssl \
     pv \
     jq \
+    wget \
     python3-dev \
     libreadline-dev \
     libyaml-dev \
@@ -59,10 +59,10 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     make \
     libopus0 \
     libopus-dev \
+    gcc \
     zip \
     mediainfo \
-    megatools \
-    aria2c
+    aria2
 
 echo '
         •• Cloning Repository
