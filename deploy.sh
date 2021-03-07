@@ -24,6 +24,7 @@ ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 apt update && apt upgrade -y && apt install --no-install-recommends -y \
     debian-keyring \
     debian-archive-keyring \
+    gcc \
     bash \
     curl \
     git \
@@ -61,8 +62,7 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     zip \
     mediainfo \
     megatools \
-    aria2c \
-    gcc
+    aria2c
 
 echo '
         •• Cloning Repository
