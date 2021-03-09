@@ -29,6 +29,8 @@ apk update && apk upgrade -f && apk add --no-cache -f \
     git \
     util-linux \
     libffi-dev \
+    libxml2 \
+    libxslt \
     libjpeg-dev \
     libjpeg62-turbo-dev \
     libwebp-dev \
