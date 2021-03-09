@@ -26,10 +26,8 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     debian-archive-keyring \
     bash \
     curl \
-    git \
     util-linux \
     libffi-dev \
-    libjpeg-dev \
     libjpeg62-turbo-dev \
     libwebp-dev \
     linux-headers-amd64 \
@@ -43,9 +41,7 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     libxslt1-dev \
     openssl \
     pv \
-    jq \
     wget \
-    python3-dev \
     libreadline-dev \
     libyaml-dev \
     zlib1g \
