@@ -21,7 +21,7 @@ export DEBIAN_FRONTEND=noninteractive
 export TZ=Asia/Kolkata
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-apk update && apk upgrade -y && apt add --no-cache \
+apk update && apk upgrade -f && apk add --no-cache -f \
     debian-keyring \
     debian-archive-keyring \
     bash \
