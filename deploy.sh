@@ -28,6 +28,7 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     curl \
     util-linux \
     libffi-dev \
+    libjpeg-dev \
     libjpeg62-turbo-dev \
     libwebp-dev \
     linux-headers-amd64 \
@@ -42,6 +43,7 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     openssl \
     pv \
     wget \
+    python3-dev \
     libreadline-dev \
     libyaml-dev \
     zlib1g \
