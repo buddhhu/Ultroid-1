@@ -4,7 +4,7 @@
 # PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 FROM ultroidteam/ultroid:0.0.1
-
+RUN apt install zip p7zip-full -y
 RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 WORKDIR /root/TeamUltroid/
 RUN pip install -r requirements.txt
