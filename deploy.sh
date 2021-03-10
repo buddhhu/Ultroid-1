@@ -71,7 +71,6 @@ git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 echo '
 	•• Getting Libraries and Installing
 '
-pip install --upgrade pip setuptools wheel
 pip install -r /root/TeamUltroid/requirements.txt
 
 echo "
