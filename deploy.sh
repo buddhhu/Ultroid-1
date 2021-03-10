@@ -26,6 +26,7 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     debian-archive-keyring \
     bash \
     curl \
+    git \
     util-linux \
     libffi-dev \
     libjpeg-dev \
