@@ -71,7 +71,6 @@ echo '
 	•• Getting Libraries and Installing
 '
 pip install --upgrade pip setuptools wheel
-pip install search-engine-parser==0.6.2
 pip install -r /root/TeamUltroid/requirements.txt
 
 echo "
