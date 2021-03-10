@@ -3,9 +3,8 @@
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
-FROM ultroidteam/ultroid:0.0.1
-RUN apt install zip p7zip-full -y
-RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
+FROM python:3.9.2-slim-buster
+COPY deploy.sh .
+RUN chmod +x deploy.sh && sh deploy.sh
 WORKDIR /root/TeamUltroid/
-RUN pip install -r requirements.txt
 CMD ["bash", "resources/startup/startup.sh"]
