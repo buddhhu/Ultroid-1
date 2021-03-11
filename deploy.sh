@@ -61,7 +61,8 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     gcc \
     zip \
     mediainfo \
-    aria2
+    aria2 \
+    p7zip-full
 
 echo '
         •• Cloning Repository
