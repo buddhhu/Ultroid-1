@@ -62,7 +62,8 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     zip \
     mediainfo \
     aria2 \
-    p7zip-full
+    p7zip-full \
+    procps
 
 echo '
         •• Cloning Repository
