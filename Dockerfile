@@ -8,6 +8,8 @@ RUN apt install -y zip p7zip-full gnupg2
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     dpkg -i ./google-chrome-stable_current_amd64.deb; apt -fqqy install && \
     rm ./google-chrome-stable_current_amd64.deb
+RUN chown root:root /opt/google/chrome/chrome-sandbox && \
+    chmod 4755 /opt/google/chrome/chrome-sandbox
 RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip  && \
     unzip chromedriver.zip chromedriver -d /usr/bin/ && \
     rm chromedriver.zip
