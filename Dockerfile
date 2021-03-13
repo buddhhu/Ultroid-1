@@ -4,7 +4,10 @@
 # PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 FROM ultroidteam/ultroid:0.0.2
-RUN apt install -y zip p7zip-full chromium-chromedriver python3-selenium
+RUN apt install -y zip p7zip-full
+RUN wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
+RUN unzip chromedriver_linux64.zip
+RUN mv chromedriver /usr/bin/chromedriver
 RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 WORKDIR /root/TeamUltroid/
 RUN pip install -r requirements.txt
