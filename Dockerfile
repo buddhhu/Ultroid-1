@@ -12,6 +12,6 @@ RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -
     rm chromedriver.zip
 RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 WORKDIR /root/TeamUltroid/
-RUN pip install py-Ultroid==13.9b0
+RUN pip install py-Ultroid==14.0b0
 RUN pip install git+https://github.com/buddhhu/search-engine-parser.git
 CMD ["bash", "resources/startup/startup.sh"]
