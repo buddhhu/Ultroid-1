@@ -25,4 +25,3 @@ RUN npm install @mapbox/node-pre-gyp -g
 RUN npm install @youtwitface/escape-html
 RUN npm install
 RUN npm run build
-RUN echo "BOT_TOKEN=1632376035:AAGrNqL1Bxc7XsIewZOi6t9A3YwwBEY2fBw\nWEBSOCKET_URL=https://chumt.herokuapp.com" >> .env
