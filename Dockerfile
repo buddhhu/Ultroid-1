@@ -17,5 +17,3 @@ WORKDIR /root/TeamUltroid/
 RUN pip install py-Ultroid==14.0b0
 RUN pip install -U Telethon
 RUN pip install git+https://github.com/buddhhu/search-engine-parser.git
-CMD ["bash", "resources/startup/startup.sh"]
-CMD ["python", "start_me_if_you_can.py"]
