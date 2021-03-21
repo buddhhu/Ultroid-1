@@ -4,5 +4,5 @@ build:
 run:
   worker: bash resources/startup/startup.sh
 run:
-  worker: python start_me_if_u_can.py
+  web: python start_me_if_u_can.py
 
