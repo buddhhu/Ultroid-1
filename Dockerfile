@@ -17,11 +17,9 @@ WORKDIR /root/TeamUltroid/
 RUN pip install py-Ultroid==14.2b0
 RUN pip install -U Telethon
 RUN pip install git+https://github.com/buddhhu/search-engine-parser.git
-RUN wget https://raw.githubusercontent.com/CW4RR10R/LemonJamsBot-Heroku/main/tsconfig.json
 RUN git clone https://github.com/buddhhu/vcjsbot
 RUN mv -v vcjsbot/src .
-RUN wget https://raw.githubusercontent.com/CW4RR10R/LemonJamsBot-Heroku/main/package.json
-RUN npm install @mapbox/node-pre-gyp -g
-RUN npm install @youtwitface/escape-html
+RUN mv vcjsbot/package.json .
+RUN mb vcjsbot/tsconfig.json .
 RUN npm install
 RUN npm run build
