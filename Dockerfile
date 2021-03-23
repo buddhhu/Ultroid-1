@@ -20,6 +20,6 @@ RUN pip install git+https://github.com/buddhhu/search-engine-parser.git
 RUN git clone https://github.com/buddhhu/vcjsbot
 RUN mv -v vcjsbot/src .
 RUN mv vcjsbot/package.json .
-RUN mb vcjsbot/tsconfig.json .
+RUN mv vcjsbot/tsconfig.json .
 RUN npm install
 RUN npm run build
