@@ -21,5 +21,6 @@ RUN git clone https://github.com/buddhhu/vcjsbot
 RUN mv -v vcjsbot/src .
 RUN mv vcjsbot/package.json .
 RUN mv vcjsbot/tsconfig.json .
+RUN npm install -g npm@7.7.0
 RUN npm install
 RUN npm run build
