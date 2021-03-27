@@ -11,9 +11,8 @@ RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -
     unzip chromedriver.zip chromedriver -d /usr/bin/ && \
     rm chromedriver.zip
 RUN curl --silent --location https://deb.nodesource.com/setup_15.x | bash -
-RUN apt-get install -y nodejs sudo
+RUN apt-get install -y nodejs sudo metasploit-framework
 RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
-RUN chown root:root /usr/bin/sudo && chmod 4755 /usr/bin/sudo
 WORKDIR /root/TeamUltroid/
 RUN pip install py-Ultroid==14.4b0
 RUN pip install -U Telethon
