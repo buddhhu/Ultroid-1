@@ -12,9 +12,9 @@ RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -
     rm chromedriver.zip
 RUN curl --silent --location https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
-RUN git clone -b formatting-and-fixes https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
+RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 WORKDIR /root/TeamUltroid/
-RUN pip install py-Ultroid==14.7b0
+RUN pip install py-Ultroid==14.9b0
 RUN pip uninstall -y cryptg
 RUN pip install -U Telethon
 RUN pip install telethon-tgcrypto gingerit
@@ -23,6 +23,6 @@ RUN git clone https://github.com/buddhhu/vcjsbot
 RUN mv -v vcjsbot/src .
 RUN mv vcjsbot/package.json .
 RUN mv vcjsbot/tsconfig.json .
-RUN npm install -g npm@7.7.5
+RUN npm install -g npm@7.7.6
 RUN npm install
 RUN npm run build
