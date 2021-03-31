@@ -12,7 +12,7 @@ RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -
     rm chromedriver.zip
 RUN curl --silent --location https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
-RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
+RUN git clone -b formatting-and-fixes https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 WORKDIR /root/TeamUltroid/
 RUN pip install py-Ultroid==14.7b0
 RUN pip uninstall -y cryptg
