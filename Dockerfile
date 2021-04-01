@@ -14,7 +14,7 @@ RUN curl --silent --location https://deb.nodesource.com/setup_15.x | bash -
 RUN apt-get install -y nodejs
 RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 WORKDIR /root/TeamUltroid/
-RUN pip install py-Ultroid==15.5b0
+RUN pip install py-Ultroid==15.6b0
 RUN pip uninstall -y cryptg
 RUN pip install -U Telethon
 RUN pip install telethon-tgcrypto gingerit
