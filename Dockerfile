@@ -11,18 +11,10 @@ RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -
     unzip chromedriver.zip chromedriver -d /usr/bin/ && \
     rm chromedriver.zip
 RUN curl --silent --location https://deb.nodesource.com/setup_15.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y nodejs sudo
 RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 WORKDIR /root/TeamUltroid/
-RUN pip install py-Ultroid==15.7b0
-RUN pip uninstall -y cryptg
-RUN pip install -U Telethon
-RUN pip install telethon-tgcrypto gingerit
-RUN pip install git+https://github.com/buddhhu/search-engine-parser.git
-RUN git clone https://github.com/buddhhu/vcjsbot
-RUN mv -v vcjsbot/src .
-RUN mv vcjsbot/package.json .
-RUN mv vcjsbot/tsconfig.json .
-RUN npm install -g npm@7.7.6
-RUN npm install
+RUN git clone https://github.com/1Danish-00/glitch_me.git && pip install -e ./glitch_me
+RUN pip install -r requirements.txt
+RUN npm install -g npm@7.7.0 && npm install
 RUN npm run build
