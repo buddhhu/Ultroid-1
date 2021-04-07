@@ -11,10 +11,10 @@ RUN wget -O chromedriver.zip http://chromedriver.storage.googleapis.com/$(curl -
     unzip chromedriver.zip chromedriver -d /usr/bin/ && \
     rm chromedriver.zip
 RUN curl --silent --location https://deb.nodesource.com/setup_15.x | bash -
-RUN apt-get install -y nodejs mpv
-RUN git clone -b beta https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
-WORKDIR /root/TeamUltroid/
+RUN apt-get install -y nodejs
+RUN git clone -b dev https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
 RUN git clone https://github.com/1Danish-00/glitch_me.git && pip install -e ./glitch_me
+WORKDIR /root/TeamUltroid/
 RUN pip install -r requirements.txt
 RUN npm install -g npm@7.8.0 && npm install
 RUN npm run build
